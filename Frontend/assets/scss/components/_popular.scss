@@ -1,0 +1,65 @@
+/*=============== POPULAR ===============*/
+.popular{
+    &__container{
+        padding-top: 4rem;
+        grid-template-columns: 250px;
+        justify-content: center;
+        row-gap: 5.5rem;
+    }
+    &__card{
+        position: relative;
+        background-color: var(--container-color);
+        padding: 7rem 2rem 1.5rem;
+        box-shadow: 0 8px 20px hsla(19, 64%, 48%, .08);
+        border-radius: 1rem;
+        text-align: center;
+        transition: background .4s; /* for dark mode animation */
+
+        &:hover .popular__img{
+            transform: translateY(-.25rem);
+        }
+    }
+    &__img{
+        width: 220px;
+        position: absolute;
+        inset: 0;
+        top: -2.5rem;
+        margin: 0 auto;
+        transition: transform .4s;
+    }
+    &__name{
+        font-size: var(--h3-font-size);
+        font-family: var(--title-font);
+        margin-bottom: .25rem;
+    }
+    &__description{
+        display: block;
+        font-size: var(--smaller-font-size);
+        margin-bottom: 1rem;
+    }
+    &__price{
+        font-size: var(--h3-font-size);
+        font-weight: var(--font-medium);
+        color: var(--first-color);
+    }
+    &__button{
+        display: flex;
+        background-color: var(--first-color);
+        padding: 6px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 1.25rem;
+        box-shadow: 0 4px 20px hsla(19, 64%, 20%, .2);
+        position: absolute;
+        bottom: 1.25rem;
+        right: 1.25rem;
+        cursor: pointer;
+        transition: background .3s;
+
+        &:hover{
+            background-color: var(--first-color-alt);
+        }
+    }
+}

@@ -1,0 +1,53 @@
+/*=============== HOME ===============*/
+.home{
+    position: relative;
+
+    &__container{
+        row-gap: 3rem;
+        padding-top: 2rem;
+    }
+    &__img{
+        width: 300px;
+        justify-self: center;
+    }
+    &__data{
+        text-align: center;
+    }
+    &__title{
+        font-size: var(--biggest-font-size);
+        font-family: var(--title-font);
+        margin-bottom: 1rem;
+
+        & img{
+            width: 40px;
+        }
+
+        & div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: .5rem;
+        }
+    }
+    &__description{
+        padding: 0 1rem;
+        margin-bottom: 2.5rem;
+    }
+    &__leaf-1,
+    &__leaf-2{
+        position: absolute;
+        opacity: .2;
+    }
+    &__leaf-1{
+        width: 80px;
+        top: 8rem;
+        left: -1rem;
+        transform: rotate(90deg);
+    }
+    &__leaf-2{
+        width: 100px;
+        right: -2rem;
+        bottom: 1rem;
+        transform: rotate(-15deg);
+    }
+}

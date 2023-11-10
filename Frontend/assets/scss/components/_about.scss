@@ -1,0 +1,34 @@
+/*=============== ABOUT ===============*/
+.about{
+    position: relative;
+
+    &__container{
+        row-gap: 3rem;
+    }
+    &__data{
+        text-align: center;
+    }
+    &__title{
+        & img{
+            width: 30px;
+        }
+        & div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: .5rem;
+        }
+    }
+    &__img{
+        width: 300px;
+        justify-self: center;
+    }
+    &__leaf{
+        width: 100px;
+        opacity: .2;
+        position: absolute;
+        right: -1.5rem;
+        bottom: 11rem;
+        transform: rotate(-15deg);
+    }
+}

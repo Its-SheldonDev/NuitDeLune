@@ -1,0 +1,57 @@
+/*=============== NEWSLETTER ===============*/
+.newsletter{
+    &__container{
+        position: relative;
+    }
+    &__content{
+        position: relative;
+        background-color: hsl(19, 24%, 15%);
+        border-radius: 2.5rem;
+        padding: 5rem 1rem 3rem;
+        text-align: center;
+        overflow: hidden;
+        margin-bottom: 2rem;
+    }
+    &__img{
+        position: absolute;
+        width: 250px;
+        top: -4.5rem;
+        left: -8rem;
+    }
+    &__data .section__title{
+        color: #fff;
+        margin-bottom: 2rem;
+    }
+    &__form{
+        background-color: #fff;
+        padding: 5px 5px 5px 16px;
+        border-radius: 4rem;
+        display: flex;
+        column-gap: .5rem;
+    }
+    &__input,
+    &__button{
+        font-family: var(--body-font);
+        border: none;
+        outline: none;
+    }
+    &__input{
+        width: 90%;
+        color: var(--text-color);
+    }
+    &__button{
+        cursor: pointer;
+    }
+    &__spinach{
+        width: 30px;
+        position: absolute;
+        right: 2rem;
+        bottom: -2rem;
+        transform: rotate(45deg);
+    }
+    &__container,
+    &__form,
+    &__input{
+        transition: background .4s; /* for dark mode animation */
+    }
+}
