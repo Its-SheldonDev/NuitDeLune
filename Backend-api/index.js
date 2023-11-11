@@ -9,7 +9,7 @@ const errorHandler = require("./middleware/errorHandler");
 const app = express();
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/nuitdelune", {
+  .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
