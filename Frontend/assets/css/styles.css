@@ -458,7 +458,6 @@ body.dark-theme {
   margin: 0 auto;
   transition: transform .4s;
 }
-
 .popular__name {
   font-size: var(--h3-font-size);
   font-family: var(--title-font);
