@@ -451,7 +451,7 @@ body.dark-theme {
 }
 
 .popular__img {
-  width: 220px;
+  width: 100px;
   position: absolute;
   inset: 0;
   top: 0.5rem;
@@ -994,9 +994,6 @@ body.dark-theme {
   .footer__link, 
   .footer__information {
     font-size: var(--normal-font-size);
-  }
-  .footer__social-link {
-    font-size: 1.5rem;
   }
   .footer__info {
     flex-direction: row;
