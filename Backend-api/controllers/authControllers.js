@@ -52,13 +52,13 @@ exports.login = asyncHandler(async (req, res, next) => {
   const { email, password } = req.body;
 
   if (!email || !password) {
-    return next(new AppError("please provide email and password!", 400));
+    return next(new AppError("Merci de saisir un mot de passe ainsi qu'un email", 400));
   }
 
   const user = await User.findOne({ email }).select("+password");
 
   if (!user || !(await user.isPasswordCorrect(password, user.password))) {
-    return next(new AppError("Incorrect email or password", 401));
+    return next(new AppError("Mot de passe ou email incorrecte", 401));
   }
 
   const token = signToken(user.id, res);
@@ -95,7 +95,7 @@ exports.protect = asyncHandler(async (req, res, next) => {
   const user = await User.findById(decoded.id);
 
   if (!user) {
-    return next(new AppError("The user does not exist", 401));
+    return next(new AppError("L'utilisateur est inconnu", 401));
   }
 
   if (user.isPasswordchanged(decoded.iat)) {
@@ -122,7 +122,7 @@ exports.forgotPassword = asyncHandler(async (req, res, next) => {
   const user = await User.findOne({ email });
 
   if (!user) {
-    return next(new AppError("There is no user with this email address.", 404));
+    return next(new AppError("Aucun utilisateur avec cet email.", 404));
   }
 
   const resetToken = user.createPasswordResetToken();
