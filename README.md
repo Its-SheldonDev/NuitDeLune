@@ -1,5 +1,5 @@
 <p align="center"> 
-  <img  src="https://github.com/Its-SheldonDev/NuitDeLune/blob/main/Frontend-Vitrine/assets/img/logo.png" data-canonical-src="https://github.com/Its-SheldonDev/NuitDeLune/blob/main/Frontend-Vitrine/assets/img/logo.png" width="400" />
+  <img  src="https://github.com/Its-SheldonDev/NuitDeLune-Front/blob/main/assets/img/logo.png" data-canonical-src="https://github.com/Its-SheldonDev/NuitDeLune-Front/blob/main/assets/img/logo.png" width="400" />
 </p>
 
 
